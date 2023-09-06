@@ -1,0 +1,8 @@
+For the loop:
+LOOP: beq x6, x0, DONE
+ addi x6, x6, -1
+ addi x5, x5, 2
+ jal x0, LOOP
+DONE:
+
+We have that x5 will be equal to 20 when the loop is finished, since the loop runs for 10 iterations, assuming x5 starts at zero and x6 starts at 10.

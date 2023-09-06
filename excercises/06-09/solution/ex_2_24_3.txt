@@ -1,0 +1,9 @@
+For the loop:
+LOOP: beq x6, x0, DONE
+ addi x6, x6, -1
+ addi x5, x5, 2
+ jal x0, LOOP
+DONE:
+
+If x6 = N, then x = (4 * N) + 1 instructions would be executed.
+So, 4 instructions per iterations, and we have N iterations, and one for the last beq.

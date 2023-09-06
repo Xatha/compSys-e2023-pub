@@ -1,0 +1,21 @@
+Big endian: Order by most significant bit first
+Little endian: Order by least significant bit first
+
+We have the address 0xABCDEF12. Assume that the first address is 0 and the word size is 4 bytes.
+
+
+Big Endian:
+
+Bytes | Word
+0       AB
+1       CD
+2       EF
+3       12
+
+Little Endian:
+
+Bytes | Word
+0       11
+1       EF
+2       CD
+3       AB
